@@ -1,5 +1,5 @@
 import random
-
+import pyinputplus as pyip
 
 
 correct = 'you guessed correctly!'
@@ -21,7 +21,7 @@ def generate_secret(low, high):
 def get_guess():
     """ get user's guess, as an integer number """
 
-    return int(input('Guess the secret number? '))
+    return int(pyip.inputNum('Guess the secret number? '))
 
 
 def check_guess(guess, secret):
