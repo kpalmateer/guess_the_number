@@ -19,10 +19,7 @@ def generate_secret(low, high):
 
 def get_guess():
     """ get user's guess, as an integer number """
-    user_num = int(pyip.inputNum('Guess the secret number? '))
-    while user_num < 0 or user_num > 10:
-        user_num = int(pyip.inputNum('Guess the secret number (Between 1 and 10)? '))
-    return user_num
+    return int(pyip.inputNum('Guess the secret number? '))
 
 
 def check_guess(guess, secret):
